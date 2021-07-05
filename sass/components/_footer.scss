@@ -5,86 +5,77 @@
   margin-left: auto;
   display: flex;
 }
-.foot {
+.container--foot {
   color: var(--white-color);
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
-.logo__foot {
-  font-family: var(--accent-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19em;
-  letter-spacing: 0.03em;
-  padding: 0;
-  margin-top: 60px;
-  margin: 0;
-}
-.contacts-list-foot > li {
-  font-style: normal;
-}
-.contacts-list-foot {
+
+.items {
   margin-top: 20px;
+  & > li {
+    font-style: normal;
+  }
+  &__link {
+    display: inline-block;
+    color: var(--foot-contact-text);
+    margin-top: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & a:hover,
+  & a:focus {
+    color: var(--active-color);
+  }
 }
-.contacts-list-foot .link {
-  display: inline-block;
-  color: var(--foot-contact-text);
-  margin-top: 9px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts-list-foot a:hover,
-.contacts-list-foot a:focus {
-  color: var(--active-color);
-}
-.logo__item--foot {
-  color: var(--white-color);
-}
-.foot-id {
+
+.foot__width {
   width: 231px;
 }
 /* CONNECT */
-.connect-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-  text-align: center;
-}
 .connect {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   margin-left: 70px;
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
-.social-connect-list {
+.social-connect {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 20px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--icon-connect);
+    fill: var(--white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--active-color);
+  }
 }
-.social-connect-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--icon-connect);
-  fill: var(--white-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-connect-item:not(:last-child) {
-  margin-right: 10px;
-}
-.social-connect-link:hover,
-.social-connect-link:focus {
-  background-color: var(--active-color);
-}
+
 /* SUBSCRIBE */
 .form-subscribe {
   position: relative;
@@ -95,24 +86,25 @@
   align-items: baseline;
   align-items: baseline;
   margin-left: 93px;
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 }
-.subscribe-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.subscribe-field {
+
+.form-subscribe__field {
   text-align: center;
   justify-content: center;
   width: 358px;
   height: 50px;
   border: none;
 }
-.subscribe-input {
+.form-subscribe__input {
   display: inline-block;
   width: 358px;
   height: 50px;
@@ -125,7 +117,7 @@
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--back-dark);
 }
-.subscribe-button {
+.form-subscribe__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +132,7 @@
   margin-right: 0;
   margin-left: 12px;
 }
-.send {
+.form-subscribe__svg {
   display: flex;
   align-items: center;
   margin-left: 10px;
@@ -150,6 +142,5 @@
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
   align-items: center;
 }
