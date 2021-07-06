@@ -77,10 +77,7 @@
 }
 
 /* SUBSCRIBE */
-.form-subscribe {
-  position: relative;
-  display: flex;
-}
+
 .subscribe {
   position: relative;
   align-items: baseline;
@@ -96,51 +93,54 @@
     margin-bottom: 20px;
   }
 }
-
-.form-subscribe__field {
-  text-align: center;
-  justify-content: center;
-  width: 358px;
-  height: 50px;
-  border: none;
-}
-.form-subscribe__input {
-  display: inline-block;
-  width: 358px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 1.25em;
-  letter-spacing: 0.03em;
-  padding-left: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: var(--back-dark);
-}
-.form-subscribe__button {
+.form-subscribe {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  color: var(--white-color);
-  background-color: var(--button-background-active);
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 0;
-  margin-left: 12px;
-}
-.form-subscribe__svg {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
-.button-label {
-  display: flex;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  align-items: center;
+  &__field {
+    text-align: center;
+    justify-content: center;
+    width: 358px;
+    height: 50px;
+    border: none;
+  }
+  &__input {
+    display: inline-block;
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25em;
+    letter-spacing: 0.03em;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--back-dark);
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    color: var(--white-color);
+    background-color: var(--button-background-active);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  &__svg {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  &__button-label {
+    display: flex;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    align-items: center;
+  }
 }
